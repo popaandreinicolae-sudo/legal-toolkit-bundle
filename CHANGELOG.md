@@ -1,34 +1,29 @@
 # Changelog Legal Toolkit Bundle
 
+## v1.1.0, 2026-06-01
+
+### Adaugat
+
+- 3 skill-uri custom romanesti standalone:
+  - constitutional-law-ro, drept constitutional roman, test proportionalitate art. 53, jurisprudenta CCR
+  - cyber-law-ro, dreptul securitatii cibernetice, Legea 58/2023, OUG 155/2024, NIS2
+  - ub-drept-citation, format citare bibliografica Scoala Doctorala UB Drept
+- GitHub Actions workflows pentru Managed Agents (CCR, M.Of., HUDOC) cu scheduler cron
+- Mapare proiecte Cowork active (5 categorii: energie, doctorat, juridic practic, Burduja, corporate)
+- Prompts ready-to-copy pentru rulare manuala Managed Agents in Claude Desktop chat
+- Email draft pentru distributie colegi doctoranzi
+
+### Modificat
+
+- Consolidare 6 skill-uri anti-halucinare in 4 active (arhivate 3 redundante)
+- Helper scripts api_helpers pentru prompt caching, Files API, Citations API
+
+### Arhivat
+
+- legal-anti-hallucination.md, redundant cu anti-hallucination-document
+- legal-source-verification.md, consolidat in anti-hallucination-document
+- anti-hallucination-factuala.md, consolidat in anti-hallucination-document
+
 ## v1.0.0, 2026-06-01
 
-Lansare initiala. Sistem complet anti-AI tone plus anti-halucinare integrat
-pentru Claude Desktop, Cowork si Code.
-
-Componente:
-- 10 skill-uri (anti-ai-tone v2.1, anti-hallucination-document/energetic,
-  juridice plus academice)
-- 4 subagenti specializati
-- 5 scripts Python (hooks plus detection)
-- MCP server anti-ai-tone v1.1.0 cu 7 tools, plus pachet MCPB single-click
-- 4 templates Project Instructions Cowork (universal, energetic, juridic
-  doctorat, README utilizare)
-- 2 scripts instalare (PowerShell Windows, Bash macOS si Linux)
-
-Construit pe baza analizei halucinatiilor reale din raportul Bucuresti-Ilfov
-v11 (44 angajati inventati, 3 milioane EUR Trust Fund fabricat, scenarii
-BAU/Strategy/Ambitious fictive, capitole goale, denumiri institutionale
-depasite tip RADET).
-
-## Planificat v1.1.0
-
-- Skill `constitutional-law-ro` standalone
-- Skill `cyber-law-ro` standalone (Legea 58/2023, OUG 155/2024, NIS2)
-- Skill `ub-drept-citation` standalone
-- Managed Agents stubs pentru CCR-watcher si M.Of.-watcher
-
-## Planificat v2.0.0
-
-- Integrare Citations API automata
-- Helper scripts prompt caching plus Files API
-- Output styles personalizate (juridic doctoral, policy paper)
+Lansare initiala, sistem complet anti-AI tone plus anti-halucinare.
